@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Table</title>
+    <style>
+        body {
+            background-color:darkslateblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            background-color:peachpuff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        video, audio {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            table, tr, td {
+                display: block;
+                width: 100%;
+            }
+
+            video, audio {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color: rgb(0, 0, 0);"> A Responsive 2x2 Video & Audio Matrix</h2>
+    <table border="2">
+        <tr>
+            <td><img src="https://play-lh.googleusercontent.com/upbRXQu9YsX0tTStQ_GQhVuUDBm_p4-6v2x66fQQN1rVRZDAJi4mvW8nfErSI52fCvc" height="70%" width=70% ></td>
+            <td><h3>Video and Audio uploaded from the local computer</h3></td>
+            <td><h3>Video and Audio uploaded from the internet</h3></td>
+        </tr>
+        <tr>
+            <td><h3>Video</h3></td>
+            <td width="50%" height="50%">
+                <video controls src="Veesum_Kaathodadhaan_-_Pa_Paandi_720p_-_Mp4Tamil.Com.mp4"></video>
+            </td>
+            <td width="50%" height="50%">
+                <video controls src="https://mp4tamil.com/videos/videop/video/Tamil_Yearly_Video_Songs/2017_Tamil_Movies_Video_Songs/Pa_Paandi_Video_Songs/720p/Soorakaathu_-_Pa_Paandi_720p_-_Mp4Tamil.Com.mp4"></video>
+            </td>
+        </tr>
+        <tr>
+            <td><h3>Audio</h3></td>
+            <td>
+                <audio controls src="Veesum-Kaathodathan.mp3"></audio>
+            </td>
+            <td>
+                <audio controls src="https://www.pagalworld.com.so/files/download/type/320/id/4911"></audio>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
